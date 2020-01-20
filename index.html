@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulieren - Oefening 2</title>
+    <link rel="stylesheet" href="oef2_stylesheet.css">
+</head>
+<body>
+
+    <h1>Stel je eigen pizza samen en we mailen hem naar jou!</h1>
+    <form action="mailto:bestellen@arnoznar.be">
+
+
+        <label>Naam:</label>
+        <input type="text" name="Naam" required>
+
+        <h4>Korst</h4>
+        <input type="radio" name="korst" id="Klassiek">
+        <label for="Klassiek">Klassiek</label>
+
+        <input type="radio" name="korst" id="Italiaans">
+        <label for="Italiaans">italiaans</label>
+
+        <input type="radio" name="korst" id="Amerikaans">
+        <label for="Amerikaans">Amerikaans</label>
+
+
+
+        <h4>Toppings</h4>
+        <main>
+        <article>
+        <input type="checkbox" name="Hesp" value="Hesp">Hesp<br>
+        <input type="checkbox" name="Champignons" value="Champignons">Champignons<br>
+        <input type="checkbox" name="Tomaat" value="Tomaat">Tomaat<br>
+        <input type="checkbox" name="kaas" value="kaas">kaas<br>
+        <input type="checkbox" name="Paprika" value="Paprika">Paprika<br>
+        </article>
+
+        <article>
+        <input type="checkbox" name="Scampi" value="Scampi">Scampi<br>
+        <input type="checkbox" name="Tonijn" value="Tonijn">Tonijn<br>
+        <input type="checkbox" name="Salami" value="Salami">Salami<br>
+        <input type="checkbox" name="Kip" value="Kip">Kip<br>
+        <input type="checkbox" name="Shoarma" value="Shoarma">Shoarma<br>
+        </article>
+
+        <article>
+        <input type="checkbox" name="Ajuin" value="Ajuin">Ajuin<br>
+        <input type="checkbox" name="Artisjok" value="Artisjok">Artisjok<br>
+        <input type="checkbox" name="Mais" value="Mais">Mais<br>
+        <input type="checkbox" name="Mozzarella" value="Mozzarella">Mozzarella<br>
+        <input type="checkbox" name="Ananas" value="Ananas" class="margin_bottom" disabled>Ananas<br>
+        </article>
+        </main>
+
+
+        <section>
+        <br><label for="opmerkingen">Opmerkingen</label><br>
+        <textarea name="opmerkingen" id="opmerkingen" rows="7" cols="100%"></textarea><br>
+        </section>
+
+        <label>Betaalwijze:</label><br>
+        <select >
+            <option value="Mastercard">Mastercard</option>
+            <option value="Maestro">Maestro</option>
+            <option value="Cash">Cash</option>
+        </select><br>
+
+        <input class="submit_button" type="submit" value="ziet er lekker uit, bestellen maar !">
+    </form>
+</body>
+</html>
